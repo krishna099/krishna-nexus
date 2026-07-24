@@ -46,7 +46,8 @@ export function Header() {
         <div className="hidden md:flex">
           <Link
             href="/contact"
-            className="px-6 py-2 bg-accent text-primary font-semibold rounded hover:bg-accent/90 transition"
+            className="px-6 py-2 font-semibold rounded hover:opacity-90 transition"
+            style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}
           >
             Get Started
           </Link>
@@ -78,7 +79,8 @@ export function Header() {
             ))}
             <Link
               href="/contact"
-              className="block w-full px-3 py-2 bg-accent text-primary text-sm font-semibold text-center rounded hover:bg-accent/90 transition mt-4"
+              className="block w-full px-3 py-2 text-sm font-semibold text-center rounded hover:opacity-90 transition mt-4"
+              style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}
             >
               Get Started
             </Link>
