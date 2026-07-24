@@ -133,7 +133,7 @@ export default function Blog() {
               ← Previous
             </button>
             <div className="flex items-center gap-2">
-              <button className="w-10 h-10 bg-accent text-accent-foreground rounded font-semibold">1</button>
+              <button className="w-10 h-10 rounded font-semibold hover:opacity-90 transition" style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}>1</button>
               <button className="w-10 h-10 border border-border text-muted-foreground rounded hover:border-accent transition">2</button>
               <button className="w-10 h-10 border border-border text-muted-foreground rounded hover:border-accent transition">3</button>
             </div>
@@ -160,7 +160,8 @@ export default function Blog() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-accent text-accent-foreground font-semibold rounded hover:bg-accent/90 transition whitespace-nowrap"
+              className="px-6 py-3 font-semibold rounded hover:opacity-90 transition whitespace-nowrap"
+              style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}
             >
               Subscribe
             </button>

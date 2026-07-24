@@ -72,7 +72,8 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/services"
-                className="px-8 py-4 bg-accent text-accent-foreground font-semibold rounded hover:bg-accent/90 transition flex items-center justify-center gap-2"
+                className="px-8 py-4 font-semibold rounded hover:opacity-90 transition flex items-center justify-center gap-2"
+                style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}
               >
                 Explore Services <ArrowRight size={20} />
               </Link>
@@ -190,7 +191,8 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-accent text-accent-foreground font-semibold rounded hover:bg-accent/90 transition"
+            className="inline-block px-8 py-4 font-semibold rounded hover:opacity-90 transition"
+            style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}
           >
             Get Started Today
           </Link>

@@ -193,7 +193,8 @@ export default function Industries() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-accent text-accent-foreground font-semibold rounded hover:bg-accent/90 transition"
+            className="inline-block px-8 py-4 font-semibold rounded hover:opacity-90 transition"
+            style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}
           >
             Schedule Industry Consultation
           </Link>
