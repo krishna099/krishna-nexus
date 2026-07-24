@@ -131,7 +131,7 @@ export default function Pricing() {
                     href="/contact"
                     className={`block w-full py-3 rounded font-semibold text-center transition ${
                       plan.highlight
-                        ? 'bg-accent text-primary hover:bg-accent/90'
+                        ? 'bg-accent text-accent-foreground hover:bg-accent/90'
                         : 'border border-accent text-accent hover:bg-accent/10'
                     }`}
                   >
@@ -217,7 +217,7 @@ export default function Pricing() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-accent text-primary font-semibold rounded hover:bg-accent/90 transition"
+            className="inline-block px-8 py-4 bg-accent text-accent-foreground font-semibold rounded hover:bg-accent/90 transition"
           >
             Schedule a Demo
           </Link>
