@@ -89,7 +89,7 @@ export default function Industries() {
             Industry <span className="text-accent">Solutions</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Tailored cloud infrastructure for every industry. We understand your unique challenges.
+            We combine cloud expertise, automation, and managed services to help businesses build secure, scalable, and future-ready technology environments.
           </p>
         </div>
       </section>
@@ -138,8 +138,8 @@ export default function Industries() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
               'HIPAA',
-              'SOC 2',
-              'ISO 27001',
+              'SOC 2 Type II',
+              'ISO/IEC 27001',
               'PCI-DSS',
               'GDPR',
               'CCPA',
@@ -155,29 +155,34 @@ export default function Industries() {
       {/* Case Studies Preview */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Success By Industry</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Success Across Industries</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              {
-                industry: 'Healthcare Provider',
-                result: 'Reduced infrastructure costs by 45% while improving patient data security',
-              },
-              {
-                industry: 'FinTech Startup',
-                result: 'Scaled from 1M to 100M transactions/month without downtime',
-              },
-              {
-                industry: 'E-Commerce Platform',
-                result: 'Achieved 99.99% uptime during peak shopping seasons',
-              },
-              {
-                industry: 'Enterprise SaaS',
-                result: 'Cut deployment time from weeks to hours with DevOps automation',
-              },
+              <h2><p>
+                At Krishna Nexus, we help businesses across diverse industries build secure, scalable, and reliable cloud environments that support growth and innovation. Our solutions are designed to address industry-specific challenges while improving performance, security, and operational efficiency.
+                Whether supporting startups, technology companies, healthcare providers, educational institutions, financial services, or enterprise organizations, our focus remains the same—delivering dependable cloud infrastructure and managed services tailored to each customer's unique business needs.
+                </p></h2>,
+                <h3> Every industry is different. Our commitment to delivering secure, scalable, and future-ready cloud solutions remains constant.</h3>
+              // {
+              //   industry: 'Healthcare Provider',
+              //   result: 'Reduced infrastructure costs by 45% while improving patient data security',
+              // },
+              // {
+              //   industry: 'FinTech Startup',
+              //   result: 'Scaled from 1M to 100M transactions/month without downtime',
+              // },
+              // {
+              //   industry: 'E-Commerce Platform',
+              //   result: 'Achieved 99.99% uptime during peak shopping seasons',
+              // },
+              // {
+              //   industry: 'Enterprise SaaS',
+              //   result: 'Cut deployment time from weeks to hours with DevOps automation',
+              // },
             ].map((study, idx) => (
               <div key={idx} className="p-8 bg-background rounded-lg border border-border hover:border-accent transition">
-                <p className="font-semibold text-accent mb-3">{study.industry}</p>
-                <p className="text-foreground font-bold">{study.result}</p>
+                {/* <p className="font-semibold text-accent mb-3">{study.industry}</p>
+                <p className="text-foreground font-bold">{study.result}</p> */}
               </div>
             ))}
           </div>
@@ -189,8 +194,12 @@ export default function Industries() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-foreground mb-6">Find Your Industry Solution</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Let our industry experts design a solution tailored to your specific needs.
+            Every industry has unique technology requirements, and we're here to help you meet them. Whether you're modernising your infrastructure, migrating to the cloud, or looking for reliable managed services, Krishna Nexus delivers solutions tailored to your business goals.
           </p>
+          <p className="text-lg text-muted-foreground mb-8">
+            Our team works closely with you to understand your challenges, recommend the right cloud strategy, and build secure, scalable, and high-performing infrastructure that supports your long-term success.
+          </p>
+          <h3 className="text-2xl font-semibold text-foreground mb-4">Let's build the right cloud solution for your business. Contact our experts today for a personalised consultation.</h3>
           <Link
             href="/contact"
             className="inline-block px-8 py-4 font-semibold rounded hover:opacity-90 transition"

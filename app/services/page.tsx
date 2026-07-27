@@ -132,41 +132,53 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Enterprise Expertise</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Cloud Expertise</h3>
                 <p className="text-muted-foreground">
-                  15+ years of experience managing infrastructure for Fortune 500 companies.
+                  Our team brings over 10+ years of industry experience in cloud technologies, automation, DevOps, and enterprise software engineering, delivering practical and scalable solutions for modern businesses.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">99.99% Uptime SLA</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Customer-Centric Approach</h3>
                 <p className="text-muted-foreground">
-                  Industry-leading reliability backed by our commitment to excellence.
+                  We take the time to understand your business objectives and design cloud solutions tailored to your operational, security, and growth requirements.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Cost Optimization</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Secure by Design</h3>
                 <p className="text-muted-foreground">
-                  Save up to 40% on infrastructure costs with our optimization strategies.
+                  Security is built into every solution we deliver. We follow industry best practices to help protect your infrastructure, applications, and business-critical data.
                 </p>
               </div>
-            </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Scalable Cloud Solutions</h3>
+                <p className="text-muted-foreground">
+                  From startups to growing enterprises, our cloud infrastructure is designed to scale with your business, ensuring flexibility, performance, and long-term value.
+                </p>
+              </div>
+               </div>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Dedicated Support</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Cost Optimisation</h3>
                 <p className="text-muted-foreground">
-                  24/7 expert engineers available for immediate support and issue resolution.
+                  We help organisations optimise cloud resources, improve operational efficiency, and reduce unnecessary infrastructure costs through right-sized architectures and automation.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Security First</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Multi-Cloud & Modern Technologies</h3>
                 <p className="text-muted-foreground">
-                  SOC 2, ISO 27001, and HIPAA compliant infrastructure.
+                  We support solutions across leading cloud platforms, including AWS, Microsoft Azure, and Google Cloud, helping businesses choose the right platform for their needs.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Multi-Cloud Expertise</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Responsive Technical Support</h3>
                 <p className="text-muted-foreground">
-                  Seamless integration across AWS, Azure, GCP, and private clouds.
+                  Our team is committed to providing timely technical assistance, proactive guidance, and dependable managed services to keep your cloud environment running smoothly.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Long-Term Partnership</h3>
+                <p className="text-muted-foreground">
+                  At Krishna Nexus, we aim to build lasting relationships by delivering reliable technology solutions, transparent communication, and continuous support as your business grows.
                 </p>
               </div>
             </div>
