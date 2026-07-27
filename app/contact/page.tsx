@@ -82,16 +82,16 @@ export default function Contact() {
                 href="tel:+1-800-123-4567"
                 className="text-muted-foreground hover:text-accent transition"
               >
-                +1 (800) 123-4567
+                +91 9876543210
               </a>
             </div>
             <div className="p-8 bg-background rounded-lg border border-border text-center">
               <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-foreground mb-2">Address</h3>
               <p className="text-muted-foreground">
-                123 Cloud Lane
+                Zirakpur, Sahibzada Ajit Singh Nagar (Mohali), Punjab, India
                 <br />
-                San Francisco, CA 94105
+                140603
               </p>
             </div>
           </div>
@@ -207,20 +207,21 @@ export default function Contact() {
             <div>
               <h3 className="font-semibold text-foreground mb-2">Sales & Support</h3>
               <p className="text-muted-foreground">
-                Monday - Friday: 9:00 AM - 6:00 PM PST
+                Monday - Friday: 9:00 AM - 6:00 PM IST
                 <br />
-                Saturday: 10:00 AM - 4:00 PM PST
+                Saturday: 10:00 AM - 4:00 PM IST
                 <br />
                 Sunday: Closed
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-2">Emergency Support</h3>
+              <h3 className="font-semibold text-foreground mb-2">Technical Support</h3>
               <p className="text-muted-foreground">
-                Available 24/7 for critical issues
+                24×7 Monitoring & Support Available for Managed Service Customers
+                <h3>Time Zone:</h3> India Standard Time (IST)
                 <br />
-                <a href="tel:+1-800-123-5678" className="text-accent hover:text-accent/80 transition">
-                  +1 (800) 123-5678
+                <a href="tel:+91-9876543210" className="text-accent hover:text-accent/80 transition">
+                  +91 9876543210
                 </a>
               </p>
             </div>
