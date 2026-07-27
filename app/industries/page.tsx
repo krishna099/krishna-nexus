@@ -156,36 +156,13 @@ export default function Industries() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Success Across Industries</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              <h2><p>
+              <p className="text-lg text-muted-foreground mb-8">
                 At Krishna Nexus, we help businesses across diverse industries build secure, scalable, and reliable cloud environments that support growth and innovation. Our solutions are designed to address industry-specific challenges while improving performance, security, and operational efficiency.
+               </p>
+               <p className="text-lg text-muted-foreground mb-8">
                 Whether supporting startups, technology companies, healthcare providers, educational institutions, financial services, or enterprise organizations, our focus remains the same—delivering dependable cloud infrastructure and managed services tailored to each customer's unique business needs.
-                </p></h2>,
-                <h3> Every industry is different. Our commitment to delivering secure, scalable, and future-ready cloud solutions remains constant.</h3>
-              // {
-              //   industry: 'Healthcare Provider',
-              //   result: 'Reduced infrastructure costs by 45% while improving patient data security',
-              // },
-              // {
-              //   industry: 'FinTech Startup',
-              //   result: 'Scaled from 1M to 100M transactions/month without downtime',
-              // },
-              // {
-              //   industry: 'E-Commerce Platform',
-              //   result: 'Achieved 99.99% uptime during peak shopping seasons',
-              // },
-              // {
-              //   industry: 'Enterprise SaaS',
-              //   result: 'Cut deployment time from weeks to hours with DevOps automation',
-              // },
-            ].map((study, idx) => (
-              <div key={idx} className="p-8 bg-background rounded-lg border border-border hover:border-accent transition">
-                {/* <p className="font-semibold text-accent mb-3">{study.industry}</p>
-                <p className="text-foreground font-bold">{study.result}</p> */}
-              </div>
-            ))}
-          </div>
+              </p>
+              <h3 className="text-2xl font-semibold text-foreground mb-4"> Every industry is different. Our commitment to delivering secure, scalable, and future-ready cloud solutions remains constant.</h3>
         </div>
       </section>
 

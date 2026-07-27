@@ -5,85 +5,85 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Pricing | Krishna Nexus',
-  description: 'Transparent pricing for enterprise cloud infrastructure solutions.',
+  description: 'Flexible Pricing. Tailored for Your Business..',
 }
 
-const plans = [
-  {
-    name: 'Starter',
-    price: '$2,499',
-    period: '/month',
-    description: 'Perfect for small teams getting started',
-    features: [
-      'Up to 5 cloud resources',
-      'Basic monitoring',
-      'Email support',
-      'Standard SLA (99.5%)',
-      'Weekly reports',
-      'Community access',
-    ],
-    cta: 'Get Started',
-  },
-  {
-    name: 'Professional',
-    price: '$7,999',
-    period: '/month',
-    description: 'For growing enterprises',
-    features: [
-      'Up to 50 cloud resources',
-      'Advanced monitoring & analytics',
-      'Priority phone support',
-      'Enterprise SLA (99.99%)',
-      'Daily reports',
-      'Dedicated account manager',
-      'Quarterly reviews',
-      'DevOps automation included',
-    ],
-    cta: 'Start Now',
-    highlight: true,
-  },
-  {
-    name: 'Enterprise',
-    price: 'Custom',
-    period: 'pricing',
-    description: 'For large-scale deployments',
-    features: [
-      'Unlimited cloud resources',
-      'Custom monitoring setup',
-      '24/7 dedicated support',
-      'Enterprise SLA (99.99%+)',
-      'Real-time dashboards',
-      'Dedicated infrastructure team',
-      'Custom integrations',
-      'Disaster recovery setup',
-      'Kubernetes management',
-    ],
-    cta: 'Contact Sales',
-  },
-]
+// const plans = [
+//   {
+//     name: 'Starter',
+//     price: '$2,499',
+//     period: '/month',
+//     description: 'Perfect for small teams getting started',
+//     features: [
+//       'Up to 5 cloud resources',
+//       'Basic monitoring',
+//       'Email support',
+//       'Standard SLA (99.5%)',
+//       'Weekly reports',
+//       'Community access',
+//     ],
+//     cta: 'Get Started',
+//   },
+//   {
+//     name: 'Professional',
+//     price: '$7,999',
+//     period: '/month',
+//     description: 'For growing enterprises',
+//     features: [
+//       'Up to 50 cloud resources',
+//       'Advanced monitoring & analytics',
+//       'Priority phone support',
+//       'Enterprise SLA (99.99%)',
+//       'Daily reports',
+//       'Dedicated account manager',
+//       'Quarterly reviews',
+//       'DevOps automation included',
+//     ],
+//     cta: 'Start Now',
+//     highlight: true,
+//   },
+//   {
+//     name: 'Enterprise',
+//     price: 'Custom',
+//     period: 'pricing',
+//     description: 'For large-scale deployments',
+//     features: [
+//       'Unlimited cloud resources',
+//       'Custom monitoring setup',
+//       '24/7 dedicated support',
+//       'Enterprise SLA (99.99%+)',
+//       'Real-time dashboards',
+//       'Dedicated infrastructure team',
+//       'Custom integrations',
+//       'Disaster recovery setup',
+//       'Kubernetes management',
+//     ],
+//     cta: 'Contact Sales',
+//   },
+// ]
 
-const addOns = [
-  {
-    name: 'Advanced Security',
-    price: '$500',
-    description: 'Enhanced security measures and compliance',
-  },
-  {
-    name: 'GPU Hosting',
-    price: '$1,000',
-    description: 'High-performance GPU instances',
-  },
-  {
-    name: 'Disaster Recovery',
-    price: '$1,500',
-    description: 'Multi-region failover setup',
-  },
-  {
-    name: 'Premium Support',
-    price: '$2,000',
-    description: 'On-call engineers available 24/7',
-  },
-]
+// const addOns = [
+//   {
+//     name: 'Advanced Security',
+//     price: '$500',
+//     description: 'Enhanced security measures and compliance',
+//   },
+//   {
+//     name: 'GPU Hosting',
+//     price: '$1,000',
+//     description: 'High-performance GPU instances',
+//   },
+//   {
+//     name: 'Disaster Recovery',
+//     price: '$1,500',
+//     description: 'Multi-region failover setup',
+//   },
+//   {
+//     name: 'Premium Support',
+//     price: '$2,000',
+//     description: 'On-call engineers available 24/7',
+//   },
+// ]
 
 export default function Pricing() {
   return (
@@ -97,68 +97,26 @@ export default function Pricing() {
             Simple, Transparent <span className="text-accent">Pricing</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose the perfect plan for your cloud infrastructure needs. Scale up as you grow.
+            Flexible Pricing. Tailored for Your Business.
           </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            At Krishna Nexus, we believe your cloud infrastructure should be as unique as your business. Our flexible service plans are designed to align with your technical requirements, operational goals, and growth strategy.
+          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Whether you're a startup, a growing business, or an enterprise, we provide transparent pricing, scalable solutions, and predictable costs—backed by expert support and a commitment to long-term partnership.
+          </p>
+          <h2 className="text-2xl font-bold text-foreground mt-8">
+            <p className="text-lg text-muted-foreground">
+              Choose the solution that's right for your business and scale with confidence as your needs evolve.
+            </p>
+          </h2>
         </div>
       </section>
 
       {/* Pricing Plans */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {plans.map((plan, idx) => (
-              <div
-                key={idx}
-                className={`rounded-lg overflow-hidden transition ${
-                  plan.highlight
-                    ? 'border-2 border-accent shadow-lg scale-105'
-                    : 'border border-border'
-                } bg-background`}
-              >
-                {/* Header */}
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{plan.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-6">{plan.description}</p>
-
-                  {/* Price */}
-                  <div className="mb-6">
-                    <span className="text-5xl font-bold text-accent">{plan.price}</span>
-                    <span className="text-muted-foreground ml-2">/{plan.period}</span>
-                  </div>
-
-                  {/* CTA Button */}
-                  <Link
-                    href="/contact"
-                    className={`block w-full py-3 rounded font-semibold text-center transition ${
-                      plan.highlight
-                        ? 'hover:opacity-90'
-                        : 'border border-accent text-accent hover:bg-accent/10'
-                    }`}
-                    style={plan.highlight ? { backgroundColor: '#ff6b35', color: '#0f1419' } : {}}
-                  >
-                    {plan.cta}
-                  </Link>
-                </div>
-
-                {/* Features */}
-                <div className="px-8 pb-8 border-t border-border">
-                  <ul className="space-y-4">
-                    {plan.features.map((feature, fidx) => (
-                      <li key={fidx} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Pricing plans section is temporarily disabled. */}
       {/* Add-ons */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Add-ons & Extras</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -175,10 +133,10 @@ export default function Pricing() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Pricing FAQ</h2>
           <div className="space-y-6">
@@ -207,8 +165,8 @@ export default function Pricing() {
             ))}
           </div>
         </div>
-      </section>
-
+      </section> */}
+     
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">

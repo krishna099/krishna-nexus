@@ -37,23 +37,23 @@ export default function Home() {
     },
   ]
 
-  const testimonials = [
-    {
-      quote: 'Krishna Nexus transformed our infrastructure. We reduced costs by 40% while improving performance.',
-      author: 'Sarah Johnson',
-      role: 'CTO, TechCorp',
-    },
-    {
-      quote: 'The DevOps automation saved us countless hours. Their team is incredibly responsive.',
-      author: 'Michael Chen',
-      role: 'Engineering Lead, DataFlow',
-    },
-    {
-      quote: 'Best infrastructure investment we&apos;ve made. Highly reliable and professional.',
-      author: 'Emma Rodriguez',
-      role: 'VP Operations, CloudFirst',
-    },
-  ]
+  // const testimonials = [
+  //   {
+  //     quote: 'Krishna Nexus transformed our infrastructure. We reduced costs by 40% while improving performance.',
+  //     author: 'Sarah Johnson',
+  //     role: 'CTO, TechCorp',
+  //   },
+  //   {
+  //     quote: 'The DevOps automation saved us countless hours. Their team is incredibly responsive.',
+  //     author: 'Michael Chen',
+  //     role: 'Engineering Lead, DataFlow',
+  //   },
+  //   {
+  //     quote: 'Best infrastructure investment we&apos;ve made. Highly reliable and professional.',
+  //     author: 'Emma Rodriguez',
+  //     role: 'VP Operations, CloudFirst',
+  //   },
+  // ]
 
   return (
     <div className="min-h-screen bg-background">
@@ -64,24 +64,25 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Enterprise Cloud <span className="text-accent">Infrastructure</span> Simplified
+              Accelerate <span className="text-accent">Your Digital Transformation</span> with Enterprise-Grade Cloud Solutions
             </h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Krishna Nexus provides cutting-edge cloud infrastructure and data center solutions designed for enterprises that demand reliability, scalability, and innovation.
+              Krishna Nexus delivers secure, scalable, and intelligent cloud infrastructure designed to help businesses innovate faster, optimize operations, and scale with confidence. From cloud migration and managed services to DevOps and infrastructure automation, we provide end-to-end solutions tailored to your business.
             </p>
+            <h3 className="text-xl font-semibold text-foreground mb-4">Secure. Scalable. Reliable.</h3>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/services"
                 className="px-8 py-4 font-semibold rounded hover:opacity-90 transition flex items-center justify-center gap-2"
                 style={{ backgroundColor: '#ff6b35', color: '#0f1419' }}
               >
-                Explore Services <ArrowRight size={20} />
+                Explore Solutions<ArrowRight size={20} />
               </Link>
               <Link
                 href="/contact"
                 className="px-8 py-4 border border-accent text-accent font-semibold rounded hover:bg-accent/10 transition"
               >
-                Schedule Demo
+                Talk to Our Experts
               </Link>
             </div>
           </div>
@@ -90,7 +91,12 @@ export default function Home() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <Cloud size={80} className="text-accent mb-4 mx-auto" />
-                  <p className="text-muted-foreground">Powerful Cloud Solutions</p>
+                  <img
+                    src="/cloud-img.png"
+                    alt="Cloud Solutions"
+                    className="rounded-lg shadow-lg mb-4"
+                  />
+                  {/* <p className="text-muted-foreground">Powerful Cloud Solutions</p> */}
                 </div>
               </div>
             </div>
@@ -104,7 +110,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">Our Services</h2>
             <p className="text-lg text-muted-foreground">
-              Comprehensive solutions tailored to your infrastructure needs
+              Comprehensive Cloud Solutions for Modern Businesses
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -126,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">What Our Clients Say</h2>
@@ -146,10 +152,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
@@ -180,15 +186,16 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center bg-gradient-to-r from-accent/10 to-secondary/10 rounded-lg p-12 border border-accent/30">
-          <h2 className="text-4xl font-bold text-foreground mb-6">Ready to Transform Your Infrastructure?</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">Ready to Accelerate Your Digital Transformation?</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Join hundreds of enterprises that trust Krishna Nexus for their cloud infrastructure.
+            Partner with Krishna Nexus to build secure, scalable, and resilient cloud infrastructure tailored to your business objectives. Our team is ready to help you design, deploy, and manage cloud solutions that drive innovation and long-term growth.
           </p>
+          <h2 className="text-2xl font-semibold text-foreground mb-6">Schedule a consultation and discover how Krishna Nexus can power your business.</h2>
           <Link
             href="/contact"
             className="inline-block px-8 py-4 font-semibold rounded hover:opacity-90 transition"
